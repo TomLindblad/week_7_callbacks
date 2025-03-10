@@ -5,6 +5,23 @@ const list = [
     "My hobbies includes reading, playing computergames/boardgames/music and like... building things I guess."
 ];
 
+/*
+print(list[0], () => {
+    print(list[1], function () {
+        print(list[2], function () {
+            print(list[3], function () {console.log("done")});
+        });
+    });
+});
+
+function print(str, cb){
+    setTimeout(() => {
+        console.log(str);
+        cb();
+    }, 1000);
+}
+*/
+
 first(() => {
     second(function () {
         third(function () {
